@@ -39,18 +39,3 @@ public class SPARQLEndpoint {
 	}
 }
 
-
-//String sparqlQuery =
-//"SELECT * \n" +
-//"WHERE { \n" +
-//"?s ?p ?o . \n" +
-//"} \n";
-//
-//
-//Query query = QueryFactory.create(sparqlQuery);
-//QueryExecution qexec = QueryExecutionFactory.sparqlService(endpoint_url, query);
-//
-//ResultSet results = qexec.execSelect();
-//ResultSetFormatter.out(System.out, results, query);       
-//
-//qexec.close() ;

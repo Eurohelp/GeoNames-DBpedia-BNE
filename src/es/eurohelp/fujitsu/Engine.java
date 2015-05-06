@@ -5,7 +5,7 @@ public class Engine {
 		
 		// GeoNames REST service config
 		String geonames_url = "http://api.geonames.org/";
-		String username = "mikel_egana";
+		String username = "";
 		
 		// Bilbo location
 		String latitude = "43.256943";
@@ -17,7 +17,7 @@ public class Engine {
 		System.out.println(geonamesid);
 		
 		// Use Id for querying endpoint
-		String eurohelp_endpoint_url = "http://172.16.250.249:8890/sparql";
+		String eurohelp_endpoint_url = "";
 		SPARQLEndpoint eurohelp_endpoint = new SPARQLEndpoint(eurohelp_endpoint_url);
 		eurohelp_endpoint.query(geonamesid);
 		
