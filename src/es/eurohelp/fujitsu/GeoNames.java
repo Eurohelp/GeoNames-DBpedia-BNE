@@ -46,11 +46,7 @@ public class GeoNames {
 			Object json_response = JSONValue.parse(entity1_string);
 			JSONArray geonames_array = (JSONArray) ((Map)json_response).get("geonames");
 			GeoNamesId = (Long) ((Map)geonames_array.get(0)).get("geonameId");
-//			System.out.println(((Map)geonames_array.get(0)).get("geonameId"));
-			
-			
-			
-//			System.out.println(((JSONArray) json_obj_map.get("geonames")).get(0));
+
 		} catch (ClientProtocolException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
