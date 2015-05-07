@@ -1,6 +1,9 @@
 package es.eurohelp.fujitsu;
 
+import java.util.List;
+
 import com.hp.hpl.jena.query.*;
+import com.hp.hpl.jena.sparql.core.ResultBinding;
 
 
 public class SPARQLEndpoint {
@@ -18,23 +21,39 @@ public class SPARQLEndpoint {
 				+ "PREFIX dbpedia_prop:<http://dbpedia.org/property/> "
 				+ "PREFIX bne_prop:<http://datos.bne.es/def/> "
 				+ "PREFIX dbpedia_ont:<http://dbpedia.org/ontology/> "
-				+ "SELECT DISTINCT ?nombre ?titulo "
-				+ "WHERE "
-				+ "{SERVICE <http://dbpedia.org/sparql> "
-				+ "{?person rdfs:label ?nombre . "
-				+ "?town owl:sameAs <http://sws.geonames.org/" + GeoNamesId +"/> "
-				+ "{?person dbpedia_prop:birthPlace ?town}UNION{?person dbpedia_ont:birthPlace ?town} "
-				+ "}SERVICE <http://datos.bne.es/sparql> "
-				+ "{?autor owl:sameAs ?person . "
+				+ "SELECT DISTINCT ?nombre ?obra ?titulo "
+//				+ "SELECT DISTINCT ?person ?nombre "
+				+ "WHERE {"
+				+ "SERVICE <http://dbpedia.org/sparql> {"
+				+ "?person rdfs:label ?nombre . "
+				+ "?town owl:sameAs <http://sws.geonames.org/" + GeoNamesId +"/> ."
+				+ "?person dbpedia_prop:birthPlace ?town"
+				
+				// UNION times out. not many dbpedia_ont:birthPlace though
+				
+//				+ "{?person dbpedia_prop:birthPlace ?town}UNION{?person dbpedia_ont:birthPlace ?town} "
+				+ "}"
+				+ "SERVICE <http://datos.bne.es/sparql> {"
+				+ "?autor owl:sameAs ?person . "
 				+ "?autor bne_prop:OP5001 ?obra . "
 				+ "?obra bne_prop:P1001 ?titulo "
 				+ "}"
-				+ "FILTER( lang(?nombre) = \"es\" )}"
+				+ "FILTER( lang(?nombre) = \"es\" )"
+				+ "}"
 				;
 		Query query = QueryFactory.create(sparqlQuery);
 		QueryExecution qexec = QueryExecutionFactory.sparqlService(endpoint_url, query);
 		ResultSet results = qexec.execSelect();
-		ResultSetFormatter.out(System.out, results, query);       
+		List vars = results.getResultVars();
+		System.out.println(vars);
+		while(results.hasNext()){
+			ResultBinding binding = (ResultBinding) results.next();
+			String nombre = ((binding.get("?nombre")).asLiteral().getString());
+			String obra = ((binding.get("?obra")).asResource().getURI());
+			String titulo  = (binding.get("?titulo")).asLiteral().getString();
+			System.out.println(nombre + " - " + obra + " - " + titulo);
+		}
+//		ResultSetFormatter.out(System.out, results, query);       
 		qexec.close() ;
 	}
 }

@@ -1,25 +1,47 @@
 package es.eurohelp.fujitsu;
 
+import java.io.IOException;
+import java.util.Map;
+
+import org.json.simple.JSONArray;
+import org.json.simple.JSONValue;
+
 public class Engine {
 	public static void main(String[] args) {
 		
 		// GeoNames REST service config
 		String geonames_url = "http://api.geonames.org/";
-		String username = "";
+		String username = args[0];
 		
-		// Bilbo location
-		String latitude = "43.256943";
-		String longitude = "-2.923611";
+		// Location
+		String latitude = args[2];
+		String longitude = args[3];
 		
-		// Get GeoNamesId for Bilbo
+		// Get GeoNamesId
 		GeoNames geonames = new GeoNames(geonames_url, username);
-		String geonamesid = String.valueOf(geonames.findNearbyPlaceNameJSON(latitude, longitude));
-		System.out.println(geonamesid);
+		String geonamesid = null;
+		try {
+			Object json_response = JSONValue.parse(geonames.findNearbyPlaceNameJSON(latitude, longitude));
+			JSONArray geonames_array = (JSONArray) ((Map)json_response).get("geonames");
+			Long GeoNamesId = (Long) ((Map)geonames_array.get(0)).get("geonameId");
+			geonamesid = String.valueOf(GeoNamesId);
+			
+			System.out.println(geonamesid);
+			
+			// Get fcode: if FCODE is section of populated place (PPLX), obtain parent
+			String fcode = (String) ((Map)geonames_array.get(0)).get("fcode");
+			if(fcode.equals("PPLX") || fcode.equals("PPL")){
+				geonamesid = geonames.obtainProperPopulatedPlace(geonamesid);
+				System.out.println(geonamesid);
+			}
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+//		System.out.println(geonamesid);
 		
-		// Use Id for querying endpoint
-		String eurohelp_endpoint_url = "";
+		// Use Id to query endpoint
+		String eurohelp_endpoint_url = args[1];
 		SPARQLEndpoint eurohelp_endpoint = new SPARQLEndpoint(eurohelp_endpoint_url);
 		eurohelp_endpoint.query(geonamesid);
-		
 	}
 }
