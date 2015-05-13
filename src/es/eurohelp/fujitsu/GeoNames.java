@@ -13,7 +13,6 @@ import org.apache.http.util.EntityUtils;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONValue;
 
-import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.Map;
 
@@ -46,7 +45,6 @@ public class GeoNames {
 				  geonameID + 
 				"&username=" + UserName);
 		
-
 		Object json_response = JSONValue.parse(entity);
 		System.out.println(json_response);
 		
@@ -60,11 +58,7 @@ public class GeoNames {
 //				System.out.println("!!!!!!!!!!!!!" + parent.get("geonameId"));
 				geonameID = String.valueOf(parent.get("geonameId"));
 			}
-
 		}
-		
-		
-
 		return geonameID;
 	}
 	
@@ -74,7 +68,6 @@ public class GeoNames {
 		CloseableHttpResponse response = httpclient.execute(httpGet);
 		HttpEntity entity = response.getEntity();
 		String entity_string = EntityUtils.toString(entity);
-//		System.out.println(entity1_string);
 		response.close();
 		return entity_string;
 	}
