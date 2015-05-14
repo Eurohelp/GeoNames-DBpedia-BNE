@@ -26,43 +26,35 @@ public class GeoNames {
 	}
 
 	// http://hc.apache.org/httpcomponents-client-ga/quickstart.html
-	public String findNearbyPlaceNameJSON (String latitude, String longitude) throws ClientProtocolException, IOException{		
-		String entity = http_get (GeoNamesURL + 
-				"findNearbyPlaceNameJSON?" +
-				"lat=" + latitude + 
-				"&lng=" + longitude + 
-				"&username=" + UserName);
-//		System.out.println(entity);
+	public String findNearbyPlaceNameJSON(String latitude, String longitude)
+			throws ClientProtocolException, IOException {
+		String entity = http_get(GeoNamesURL + "findNearbyPlaceNameJSON?"
+				+ "lat=" + latitude + "&lng=" + longitude + "&username="
+				+ UserName);
 		return entity;
 	}
-	
-	public String obtainProperPopulatedPlace (String geonameID) throws ClientProtocolException, IOException {
-		
-//		http://api.geonames.org/hierarchy?geonameId=3128026&username=mikel_egana
-		
-		String entity = http_get (GeoNamesURL + 
-				"hierarchyJSON?geonameId=" +
-				  geonameID + 
-				"&username=" + UserName);
-		
+
+	public String obtainProperPopulatedPlace(String geonameID)
+			throws ClientProtocolException, IOException {
+		String entity = http_get(GeoNamesURL + "hierarchyJSON?geonameId="
+				+ geonameID + "&username=" + UserName);
+
 		Object json_response = JSONValue.parse(entity);
-//		System.out.println(json_response);
-		
-		JSONArray geonames_array = (JSONArray) ((Map)json_response).get("geonames");
+		JSONArray geonames_array = (JSONArray) ((Map) json_response)
+				.get("geonames");
 		Iterator geonames_array_iterator = geonames_array.iterator();
-		while(geonames_array_iterator.hasNext()){
+		while (geonames_array_iterator.hasNext()) {
 			Map parent = (Map) geonames_array_iterator.next();
 			String fcode = (String) parent.get("fcode");
-//			System.out.println(fcode +"-" + parent.get("geonameId"));
-			if(!(fcode.equals("PPLX") || fcode.equals("PPL"))){
-//				System.out.println("!!!!!!!!!!!!!" + parent.get("geonameId"));
+			if (!(fcode.equals("PPLX") || fcode.equals("PPL"))) {
 				geonameID = String.valueOf(parent.get("geonameId"));
 			}
 		}
 		return geonameID;
 	}
-	
-	private static String http_get (String url_get) throws ClientProtocolException, IOException, ParseException{
+
+	private static String http_get(String url_get)
+			throws ClientProtocolException, IOException, ParseException {
 		CloseableHttpClient httpclient = HttpClients.createDefault();
 		HttpGet httpGet = new HttpGet(url_get);
 		CloseableHttpResponse response = httpclient.execute(httpGet);

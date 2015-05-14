@@ -25,10 +25,21 @@ public class App {
 //		String longitude = "-2.17663";
 		
 		// Salamanca-Madrid
-		String latitude = "40.429824"; 
-		String longitude = "-3.683133"; 
+//		String latitude = "40.429824"; 
+//		String longitude = "-3.683133"; 
+		
+		// Antas 
+		String latitude = "37.24516"; 
+		String longitude = "-1.917543";
+		
+//		String latitude = "37777777777777777777777777777"; 
+//		String longitude = "-222222222222222222222222222";
 		
 		GeoNames_DBPedia_BNE app = new GeoNames_DBPedia_BNE(GeoNamesURL, GeoNamesUser, DBPediaEndPoint, BNEendpoint);
+		
+//		app.getObras(new Autor(URI.create("http://dbpedia.org/resource/Carlos_Areces"), "yo"));
+//		app.getObras(new Autor(URI.create("http://yo.me"), "yo"));
+		
 		try {
 			ArrayList<Autor> autores = app.getAutores(latitude, longitude);
 			
@@ -44,6 +55,8 @@ public class App {
 				}
 			}
 		} catch (IOException e) {
+			e.printStackTrace();
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
