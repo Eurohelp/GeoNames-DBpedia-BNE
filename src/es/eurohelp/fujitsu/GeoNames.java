@@ -46,7 +46,7 @@ public class GeoNames {
 				"&username=" + UserName);
 		
 		Object json_response = JSONValue.parse(entity);
-		System.out.println(json_response);
+//		System.out.println(json_response);
 		
 		JSONArray geonames_array = (JSONArray) ((Map)json_response).get("geonames");
 		Iterator geonames_array_iterator = geonames_array.iterator();

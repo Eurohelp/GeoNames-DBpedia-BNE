@@ -2,54 +2,49 @@ package es.eurohelp.fujitsu;
 
 import java.io.IOException;
 import java.net.URI;
+import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.Map;
 
 import org.json.simple.JSONArray;
 import org.json.simple.JSONValue;
 
 import es.eurohelp.fujitsu.linkeddata.Autor;
+import es.eurohelp.fujitsu.linkeddata.Obra;
 
 public class App {
 	public static void main(String[] args) {
+
+		String GeoNamesURL = "http://api.geonames.org/";
+		String GeoNamesUser = "mikel_egana";
+		String DBPediaEndPoint = "http://dbpedia.org/sparql";
+		String BNEendpoint = "http://datos.bne.es/sparql";
 		
-		Autor mi = new Autor();
-		mi.setUri(URI.create("http://api.geonames.org/"));
-		mi.setName("yo");
-		System.out.println(mi.getName() + mi.getUri());
+		// Astigarraga?
+//		String latitude = "43.00612";  
+//		String longitude = "-2.17663";
 		
-//		// GeoNames REST service config
-//		String geonames_url = "http://api.geonames.org/";
-//		String username = args[0];
-//		
-//		// Location
-//		String latitude = args[2];
-//		String longitude = args[3];
-//		
-//		// Get GeoNamesId
-//		GeoNames geonames = new GeoNames(geonames_url, username);
-//		String geonamesid = null;
-//		try {
-//			Object json_response = JSONValue.parse(geonames.findNearbyPlaceNameJSON(latitude, longitude));
-//			JSONArray geonames_array = (JSONArray) ((Map)json_response).get("geonames");
-//			Long GeoNamesId = (Long) ((Map)geonames_array.get(0)).get("geonameId");
-//			geonamesid = String.valueOf(GeoNamesId);
-//			
-//			System.out.println(geonamesid);
-//			
-//			// Get fcode: if FCODE is section of populated place (PPLX), obtain parent
-//			String fcode = (String) ((Map)geonames_array.get(0)).get("fcode");
-//			if(fcode.equals("PPLX") || fcode.equals("PPL")){
-//				geonamesid = geonames.obtainProperPopulatedPlace(geonamesid);
-//				System.out.println(geonamesid);
-//			}
-//		} catch (IOException e) {
-//			e.printStackTrace();
-//		}
-////		System.out.println(geonamesid);
-//		
-//		// Use Id to query endpoint
-//		String eurohelp_endpoint_url = args[1];
-//		SPARQLEndpoint eurohelp_endpoint = new SPARQLEndpoint(eurohelp_endpoint_url);
-//		eurohelp_endpoint.query(geonamesid);
+		// Salamanca-Madrid
+		String latitude = "40.429824"; 
+		String longitude = "-3.683133"; 
+		
+		GeoNames_DBPedia_BNE app = new GeoNames_DBPedia_BNE(GeoNamesURL, GeoNamesUser, DBPediaEndPoint, BNEendpoint);
+		try {
+			ArrayList<Autor> autores = app.getAutores(latitude, longitude);
+			
+			Iterator<Autor> autores_iterator = autores.iterator();
+			while (autores_iterator.hasNext()){
+				Autor autor = autores_iterator.next();
+				System.out.println(autor.getUri() + autor.getName());
+				ArrayList<Obra> obras = app.getObras(autor);
+				Iterator<Obra> obras_iterator = obras.iterator();
+				while(obras_iterator.hasNext()){
+					Obra obra = obras_iterator.next();
+					System.out.println(" --- " + obra.getTitulo());
+				}
+			}
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
 }
