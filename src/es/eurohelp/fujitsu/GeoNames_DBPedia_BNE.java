@@ -52,16 +52,17 @@ public class GeoNames_DBPedia_BNE {
 			Long GeoNamesId = (Long) ((Map) geonames_array.get(0))
 					.get("geonameId");
 			geonamesid = String.valueOf(GeoNamesId);
-
+//			System.out.println(geonamesid);
 			// Get fcode: if FCODE is section of populated place (PPLX), obtain
 			// parent
 			String fcode = (String) ((Map) geonames_array.get(0)).get("fcode");
+//			System.out.println(geonamesid +"--"+fcode);
 			if (fcode.equals("PPLX") || fcode.equals("PPL")) {
 				geonamesid = geonames.obtainProperPopulatedPlace(geonamesid);
 			}
 		}
 
-		// System.out.println(geonamesid);
+//		System.out.println(geonamesid);
 		String sparqlQuery = "PREFIX owl:<http://www.w3.org/2002/07/owl#>"
 				+ "PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>"
 				+ "PREFIX dbpedia_prop:<http://dbpedia.org/property/>"
@@ -104,7 +105,7 @@ public class GeoNames_DBPedia_BNE {
 
 	public ArrayList<Obra> getObras(Autor autor) {
 		
-		System.out.println(autor.getName());
+//		System.out.println(autor.getName());
 		
 		ArrayList<Obra> obras = new ArrayList<Obra>();
 
@@ -128,7 +129,7 @@ public class GeoNames_DBPedia_BNE {
 					.getURI());
 			Obra obra = new Obra(uri_obra, titulo);
 			
-			System.out.println(uri_obra + titulo);
+//			System.out.println(uri_obra + titulo);
 			
 			obras.add(obra);
 		}

@@ -46,10 +46,12 @@ public class GeoNames {
 		while (geonames_array_iterator.hasNext()) {
 			Map parent = (Map) geonames_array_iterator.next();
 			String fcode = (String) parent.get("fcode");
+//			System.out.println(geonameID +"--"+fcode);
 			if (!(fcode.equals("PPLX") || fcode.equals("PPL"))) {
 				geonameID = String.valueOf(parent.get("geonameId"));
 			}
 		}
+
 		return geonameID;
 	}
 

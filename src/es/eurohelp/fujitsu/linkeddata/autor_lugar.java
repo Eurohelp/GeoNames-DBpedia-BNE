@@ -1,75 +1,81 @@
 package es.eurohelp.fujitsu.linkeddata;
 
-import java.net.URI;
+import java.io.BufferedWriter;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.OutputStreamWriter;
+import java.io.PrintWriter;
+import java.io.Writer;
 import java.util.ArrayList;
+import java.util.Iterator;
 
-import com.hp.hpl.jena.query.Query;
-import com.hp.hpl.jena.query.QueryExecution;
-import com.hp.hpl.jena.query.QueryExecutionFactory;
-import com.hp.hpl.jena.query.QueryFactory;
-import com.hp.hpl.jena.query.ResultSet;
-import com.hp.hpl.jena.sparql.core.ResultBinding;
+import es.eurohelp.fujitsu.GeoNames_DBPedia_BNE;
+
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
 
 public class autor_lugar {
 
-	public static void main(String[] args) {
-		String sparqlQuery = "PREFIX owl:<http://www.w3.org/2002/07/owl#>"
-				+ "PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>"
-				+ "PREFIX dbpedia_prop:<http://dbpedia.org/property/>"
-				+ "PREFIX dbpedia_ont:<http://dbpedia.org/ontology/>"
-				+ "PREFIX bne_prop:<http://datos.bne.es/def/>"
+	public static void main(String[] args) throws Exception {
 
-				+ "SELECT DISTINCT ?person " + "WHERE {"
-				+ "?autor owl:sameAs ?person ."
-				+ "?autor bne_prop:OP5001 ?obra ."
-				+ "?obra bne_prop:P1001 ?titulo " + "}" + "";
-		Query query = QueryFactory.create(sparqlQuery);
-		QueryExecution qexec = QueryExecutionFactory.sparqlService(
-				"http://datos.bne.es/sparql", query);
-		ResultSet results = qexec.execSelect();
+		String GeoNamesURL = "http://api.geonames.org/";
+		 String GeoNamesUser = "mikel_egana";
+//		String GeoNamesUser = "eurohelp.bilbao";
+		String DBPediaEndPoint = "http://dbpedia.org/sparql";
+		String BNEendpoint = "http://datos.bne.es/sparql";
 
-		while (results.hasNext()) {
-			ResultBinding binding = (ResultBinding) results.next();
-			String person = (binding.get("?person")).asResource().getURI();
-			if (person.startsWith("http://dbpedia.org/resource/")) {
-				System.out.println("[PERSON] " + person);
-				String sparqlQuery2 = "PREFIX owl:<http://www.w3.org/2002/07/owl#>"
-						+ "PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>"
-						+ "PREFIX dbpedia_prop:<http://dbpedia.org/property/>"
-						+ "PREFIX dbpedia_ont:<http://dbpedia.org/ontology/>"
-						+ "SELECT DISTINCT ?geo "
-						+ "WHERE {"
-						+ "<"
-						+ person
-						+ ">"
-						+ " rdfs:label ?nombre . "
-						+ "?town owl:sameAs ?geo ."
-						+ "{ "
-						+ "<"
-						+ person
-						+ ">"
-						+ " dbpedia_prop:birthPlace ?town} "
-						+ "UNION "
-						+ "{ "
-						+ "<"
-						+ person
-						+ ">"
-						+ "  dbpedia_ont:birthPlace ?town}"
-						+ "FILTER( lang(?nombre) = \"es\" )" + "}";
-				Query query2 = QueryFactory.create(sparqlQuery2);
-				QueryExecution qexec2 = QueryExecutionFactory.sparqlService(
-						"http://datos.bne.es/sparql", query2);
-				ResultSet results2 = qexec.execSelect();
-				while (results2.hasNext()) {
-					ResultBinding binding2 = (ResultBinding) results2.next();
-					if (binding2.get("?geo") != null) {
-						System.out.println("[GEO] "
-								+ binding2.get("?geo").asResource().getURI());
+		// String latitude = null;
+		// String longitude = null;
+
+		JSONParser parser = new JSONParser();
+		Object obj = parser
+				.parse(new FileReader(
+						"/Users/megana/Euro-help/Eclipse_Workspace/GeoNames-DBpedia-BNE/towns2.txt"));
+		JSONArray array = (JSONArray) obj;
+
+		Iterator iterator = array.iterator();
+		while (iterator.hasNext()) {
+			JSONObject town = (JSONObject) iterator.next();
+			// System.out.println(town);
+			String town_as_key = (String) town.keySet().toArray()[0];
+			// System.out.println(town_as_key.trim());
+			JSONObject lat_long = (JSONObject) town.get(town_as_key);
+			// System.out.println(lat_long.get("lon"));
+			// System.out.println(lat_long.get("lat"));
+			String latitude = String.valueOf(lat_long.get("lat"));
+			String longitude = String.valueOf(lat_long.get("lon"));
+
+			GeoNames_DBPedia_BNE app = new GeoNames_DBPedia_BNE(GeoNamesURL,
+					GeoNamesUser, DBPediaEndPoint, BNEendpoint);
+
+			boolean autor_town = false;
+
+			ArrayList<Autor> autores = app.getAutores(latitude, longitude);
+			Iterator<Autor> autores_iterator = autores.iterator();
+			while (autores_iterator.hasNext()) {
+				Autor autor = autores_iterator.next();
+				ArrayList<Obra> obras = app.getObras(autor);
+				if (!obras.isEmpty()) {
+					autor_town = true;
+					// System.out.println("==>" + autor.getUri() + " - "
+					// + autor.getName());
+					Iterator<Obra> obras_iterator = obras.iterator();
+					while (obras_iterator.hasNext()) {
+						Obra obra = obras_iterator.next();
+						// System.out.println("      " + obra.getUri() + " - "
+						// + obra.getTitulo());
 					}
 				}
-				qexec2.close();
 			}
+
+			if (autor_town) {
+				System.out.println(town);
+			}
+
 		}
-		qexec.close();
 	}
 }

@@ -1,0 +1,60 @@
+log4j:WARN No appenders could be found for logger (org.apache.http.client.protocol.RequestAddCookies).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+{"\tAlhama de Almería\t":{"lon":-2.570075,"lat":36.95742}}
+{"\tAlmería\t":{"lon":-2.467922,"lat":36.84016}}
+{"\tAlgeciras\t":{"lon":-5.447698,"lat":36.12978}}
+{"\tChipiona\t":{"lon":-6.43587,"lat":36.7408}}
+{"\tJerez de la Frontera\t":{"lon":-6.137173,"lat":36.68656}}
+{"\tSan Fernando\t":{"lon":-6.196626,"lat":36.46572}}
+{"\tSetenil de las Bodegas\t":{"lon":-5.181413,"lat":36.86406}}
+{"\tBujalance\t":{"lon":-4.383588,"lat":37.89657}}
+{"\tCórdoba\t":{"lon":-4.779152,"lat":37.88473}}
+{"\tIznájar\t":{"lon":-4.308423,"lat":37.25726}}
+{"\tMontilla\t":{"lon":-4.638313,"lat":37.58963}}
+{"\tPozoblanco\t":{"lon":-4.848376,"lat":38.37742}}
+{"\tPriego de Córdoba\t":{"lon":-4.194839,"lat":37.4389}}
+{"\tVictoria (La)\t":{"lon":-4.784959,"lat":37.88327}}
+{"\tFuente Vaqueros\t":{"lon":-3.783053,"lat":37.21957}}
+{"\tGuadix\t":{"lon":-3.134583,"lat":37.3004}}
+{"\tMinas de Riotinto\t":{"lon":-6.591848,"lat":37.69391}}
+{"\tMoguer\t":{"lon":-6.836591,"lat":37.27469}}
+{"\tAlcalá la Real\t":{"lon":-3.925078,"lat":37.46358}}
+{"\tCazorla\t":{"lon":-3.002167,"lat":37.91055}}
+{"\tMancha Real\t":{"lon":-3.612393,"lat":37.78617}}
+{"\tVillanueva del Arzobispo\t":{"lon":-3.010099,"lat":38.16934}}
+{"\tAlpandeire\t":{"lon":-5.202244,"lat":36.63317}}
+{"\tBurgo (El)\t":{"lon":-4.946407,"lat":36.78993}}
+Exception in thread "main" java.lang.Exception: Could not obtain ID from GeoNames due to: {"status":{"message":"the hourly limit of 2000 credits for mikel_egana has been exceeded. Please throttle your requests or use the commercial service.","value":19}}
+	at es.eurohelp.fujitsu.GeoNames_DBPedia_BNE.getAutores(GeoNames_DBPedia_BNE.java:49)
+	at es.eurohelp.fujitsu.linkeddata.autor_lugar.main(autor_lugar.java:57)
+log4j:WARN No appenders could be found for logger (org.apache.http.client.protocol.RequestAddCookies).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+{"\tFuengirola\t":{"lon":-4.624353,"lat":36.53901}}
+{"\tMálaga\t":{"lon":-4.420019,"lat":36.71965}}
+{"\tVélez-Málaga\t":{"lon":-4.100675,"lat":36.77864}}
+{"\tCoria del Río\t":{"lon":-6.051814,"lat":37.28506}}
+{"\tGuadalcanal\t":{"lon":-5.821165,"lat":38.09198}}
+{"\tOsuna\t":{"lon":-5.102748,"lat":37.23697}}
+{"\tSan Juan de Aznalfarache\t":{"lon":-6.035451,"lat":37.35838}}
+{"\tSevilla\t":{"lon":-5.996295,"lat":37.38264}}
+{"\tBarbastro\t":{"lon":0.1239805,"lat":42.0348}}
+{"\tHuesca\t":{"lon":-0.408898,"lat":42.1401}}
+{"\tPeralta de Calasanz\t":{"lon":0.3936722,"lat":42.01811}}
+{"\tSariñena\t":{"lon":-0.1572419,"lat":41.79218}}
+{"\tAbejuela\t":{"lon":-0.8941151,"lat":39.91035}}
+{"\tCamarena de la Sierra\t":{"lon":-1.040907,"lat":40.1476}}
+{"\tCeladas\t":{"lon":-1.1496,"lat":40.4751}}
+{"\tCrivillén\t":{"lon":-0.5752621,"lat":40.88327}}
+{"\tSamper de Calanda\t":{"lon":-0.390319,"lat":41.19006}}
+{"\tTeruel\t":{"lon":-1.10691,"lat":40.34411}}
+Exception in thread "main" java.lang.Exception: Could not obtain ID from GeoNames due to: {"status":{"message":"the hourly limit of 2000 credits for eurohelp.bilbao has been exceeded. Please throttle your requests or use the commercial service.","value":19}}
+	at es.eurohelp.fujitsu.GeoNames_DBPedia_BNE.getAutores(GeoNames_DBPedia_BNE.java:49)
+	at es.eurohelp.fujitsu.linkeddata.autor_lugar.main(autor_lugar.java:57)
+log4j:WARN No appenders could be found for logger (org.apache.http.client.protocol.RequestAddCookies).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+Exception in thread "main" java.lang.Exception: Could not obtain ID from GeoNames due to: {"status":{"message":"the hourly limit of 2000 credits for mikel_egana has been exceeded. Please throttle your requests or use the commercial service.","value":19}}
+	at es.eurohelp.fujitsu.GeoNames_DBPedia_BNE.getAutores(GeoNames_DBPedia_BNE.java:49)
+	at es.eurohelp.fujitsu.linkeddata.autor_lugar.main(autor_lugar.java:57)
