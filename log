@@ -118,9 +118,6 @@
 {"\tSant Just Desvern\t":{"lon":2.075544,"lat":41.38576}}
 {"\tSant Pere de Ribes\t":{"lon":1.775418,"lat":41.2591}}
 {"\tTavèrnoles\t":{"lon":2.326051,"lat":41.95227}}
-log4j:WARN No appenders could be found for logger (org.apache.http.client.protocol.RequestAddCookies).
-log4j:WARN Please initialize the log4j system properly.
-log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
 {"\tVilanova i la Geltrú\t":{"lon":1.725568,"lat":41.22415}}
 {"\tLlanars\t":{"lon":2.34457,"lat":42.32041}}
 {"\tMolló\t":{"lon":2.404507,"lat":42.34643}}
@@ -151,3 +148,42 @@ log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more in
 {"\tVilanova de Segrià\t":{"lon":0.620144,"lat":41.71128}}
 {"\tCastellvell del Camp\t":{"lon":1.098705,"lat":41.17999}}
 {"\tMilà (El)\t":{"lon":1.20525,"lat":41.24904}}
+{"\tTortosa\t":{"lon":0.5209974,"lat":40.811}}
+{"\tVila-seca\t":{"lon":1.145001,"lat":41.11095}}
+{"\tVinyols i els Arcs\t":{"lon":1.039709,"lat":41.11338}}
+{"\tAlmendralejo\t":{"lon":-6.405679,"lat":38.68982}}
+{"\tBadajoz\t":{"lon":-6.970284,"lat":38.8786}}
+{"\tBarcarrota\t":{"lon":-6.849041,"lat":38.51441}}
+{"\tMérida\t":{"lon":-6.345606,"lat":38.91586}}
+{"\tValle de la Serena\t":{"lon":-5.799649,"lat":38.70062}}
+{"\tAlcántara\t":{"lon":-6.886507,"lat":39.71918}}
+{"\tCapela (A)\t":{"lon":-8.792709,"lat":42.69293}}
+{"\tCoruña (A)\t":{"lon":-8.395835,"lat":43.37087}}
+{"\tOroso\t":{"lon":-8.434846,"lat":42.99442}}
+{"\tPonteceso\t":{"lon":-8.900965,"lat":43.24269}}
+{"\tCospeito\t":{"lon":-7.558825,"lat":43.23597}}
+{"\tMonforte de Lemos\t":{"lon":-7.510688,"lat":42.5185}}
+{"\tBarbadás\t":{"lon":-7.887585,"lat":42.29916}}
+{"\tOurense\t":{"lon":-7.864641,"lat":42.34001}}
+{"\tMos\t":{"lon":-8.654388,"lat":42.19545}}
+{"\tPorriño (O)\t":{"lon":-8.619299,"lat":42.16036}}
+{"\tValga\t":{"lon":-8.639425,"lat":42.69431}}
+{"\tPetra\t":{"lon":3.112162,"lat":39.6091}}
+{"\tLogroño\t":{"lon":-2.449995,"lat":42.46577}}
+{"\tTorrecilla en Cameros\t":{"lon":-2.630543,"lat":42.25526}}
+{"\tAlcalá de Henares\t":{"lon":-3.364136,"lat":40.48166}}
+{"\tMadrid\t":{"lon":-3.700346,"lat":40.41669}}
+{"\tRascafría\t":{"lon":-3.879398,"lat":40.90381}}
+{"\tCartagena\t":{"lon":-0.9912944,"lat":37.60565}}
+{"\tMurcia\t":{"lon":-1.12989,"lat":37.98344}}
+{"\tGetaria\t":{"lon":-2.204363,"lat":43.30326}}
+{"\tBilbao\t":{"lon":-2.923441,"lat":43.25696}}
+{"\tJijona\/Xixona\t":{"lon":-0.5077739,"lat":38.54006}}
+{"\tMutxamel\t":{"lon":-0.4432408,"lat":38.41235}}
+{"\tOnil\t":{"lon":-0.6731591,"lat":38.62606}}
+{"\tOrihuela\t":{"lon":-0.9447829,"lat":38.08395}}
+{"\tSan Vicente del Raspeig\/Sant Vicent del Raspeig\t":{"lon":-0.5249284,"lat":38.39609}}
+{"\tSant Joan d'Alacant\t":{"lon":-0.4345329,"lat":38.39817}}
+{"\tVerger (el)\t":{"lon":-0.5109846,"lat":38.33109}}
+{"\tCastellnovo\t":{"lon":-0.4583924,"lat":39.86256}}
+
