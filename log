@@ -94,10 +94,60 @@
 {"\tCarrión de los Condes\t":{"lon":-4.601765,"lat":42.33895}}
 {"\tCervera de Pisuerga\t":{"lon":-4.499135,"lat":42.86576}}
 {"\tPalencia\t":{"lon":-4.531175,"lat":42.01246}}
-
+{"\t�?greda\t":{"lon":-1.920437,"lat":41.85508}}
+{"\tSan Leonardo de Yagüe\t":{"lon":-3.066409,"lat":41.82905}}
+{"\tValladolid\t":{"lon":-4.728388,"lat":41.65295}}
+{"\tZamora\t":{"lon":-5.743778,"lat":41.50368}}
+{"\tAlella\t":{"lon":2.295461,"lat":41.49395}}
+{"\tArtés\t":{"lon":1.954726,"lat":41.79839}}
+{"\tBarcelona\t":{"lon":2.169919,"lat":41.38792}}
+{"\tCabanyes (Les)\t":{"lon":1.68963,"lat":41.37174}}
+{"\tCalldetenes\t":{"lon":2.283792,"lat":41.92522}}
+{"\tCentelles\t":{"lon":2.221327,"lat":41.79659}}
+{"\tCornellà de Llobregat\t":{"lon":2.070432,"lat":41.35561}}
+{"\tEsplugues de Llobregat\t":{"lon":2.088085,"lat":41.37751}}
+{"\tFolgueroles\t":{"lon":2.31796,"lat":41.93813}}
+{"\tGranada (La)\t":{"lon":1.719494,"lat":41.37685}}
+{"\tHospitalet de Llobregat (L')\t":{"lon":2.099704,"lat":41.35958}}
+{"\tLlacuna (La)\t":{"lon":2.197244,"lat":41.39901}}
+{"\tMataró\t":{"lon":2.445278,"lat":41.5375}}
+{"\tPacs del Penedès\t":{"lon":1.669417,"lat":41.36156}}
+{"\tPalma de Cervelló (La)\t":{"lon":1.967154,"lat":41.41331}}
+{"\tSant Adrià de Besòs\t":{"lon":2.218239,"lat":41.4306}}
+{"\tSant Joan Despí\t":{"lon":2.056065,"lat":41.36769}}
+{"\tSant Just Desvern\t":{"lon":2.075544,"lat":41.38576}}
+{"\tSant Pere de Ribes\t":{"lon":1.775418,"lat":41.2591}}
+{"\tTavèrnoles\t":{"lon":2.326051,"lat":41.95227}}
 log4j:WARN No appenders could be found for logger (org.apache.http.client.protocol.RequestAddCookies).
 log4j:WARN Please initialize the log4j system properly.
 log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
-Exception in thread "main" java.lang.Exception: Could not obtain ID from GeoNames due to: {"status":{"message":"the hourly limit of 2000 credits for mikel_ni has been exceeded. Please throttle your requests or use the commercial service.","value":19}}
-	at es.eurohelp.fujitsu.GeoNames_DBPedia_BNE.getAutores(GeoNames_DBPedia_BNE.java:56)
-	at es.eurohelp.fujitsu.linkeddata.autor_lugar.main(autor_lugar.java:59)
+{"\tVilanova i la Geltrú\t":{"lon":1.725568,"lat":41.22415}}
+{"\tLlanars\t":{"lon":2.34457,"lat":42.32041}}
+{"\tMolló\t":{"lon":2.404507,"lat":42.34643}}
+{"\tPortbou\t":{"lon":3.15937,"lat":42.42653}}
+{"\tVilallonga de Ter\t":{"lon":2.310959,"lat":42.33075}}
+{"\tAlbatàrrec\t":{"lon":0.6057172,"lat":41.57299}}
+{"\tAlcoletge\t":{"lon":0.6945253,"lat":41.64909}}
+{"\tAlguaire\t":{"lon":0.5897447,"lat":41.73795}}
+{"\tAlmacelles\t":{"lon":0.4377279,"lat":41.73101}}
+{"\tAlpicat\t":{"lon":0.5552974,"lat":41.66711}}
+{"\tArtesa de Lleida\t":{"lon":0.7055162,"lat":41.55321}}
+{"\tBenavent de Segrià\t":{"lon":0.633923,"lat":41.69626}}
+{"\tConca de Dalt\t":{"lon":0.9730556,"lat":42.24611}}
+{"\tCorbins\t":{"lon":0.6974681,"lat":41.69099}}
+{"\tGavet de la Conca\t":{"lon":0.9211597,"lat":42.12273}}
+{"\tMontoliu de Lleida\t":{"lon":0.5875061,"lat":41.56234}}
+{"\tPobla de Segur (La)\t":{"lon":0.9675135,"lat":42.24765}}
+{"\tRosselló\t":{"lon":0.5957855,"lat":41.69844}}
+{"\tSalàs de Pallars\t":{"lon":0.9324489,"lat":42.21158}}
+{"\tSoses\t":{"lon":0.4879092,"lat":41.53379}}
+{"\tSudanell\t":{"lon":0.566377,"lat":41.55616}}
+{"\tTalarn\t":{"lon":0.8992487,"lat":42.18497}}
+{"\tTorre-serona\t":{"lon":0.6292645,"lat":41.6713}}
+{"\tTorrefarrera\t":{"lon":0.6067967,"lat":41.67339}}
+{"\tTorrelameu\t":{"lon":0.7047597,"lat":41.70456}}
+{"\tTorres de Segre\t":{"lon":0.5141932,"lat":41.53406}}
+{"\tVilanova de la Barca\t":{"lon":0.7291372,"lat":41.68935}}
+{"\tVilanova de Segrià\t":{"lon":0.620144,"lat":41.71128}}
+{"\tCastellvell del Camp\t":{"lon":1.098705,"lat":41.17999}}
+{"\tMilà (El)\t":{"lon":1.20525,"lat":41.24904}}

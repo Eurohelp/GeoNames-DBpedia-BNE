@@ -91,10 +91,10 @@ public class GeoNames_DBPedia_BNE {
 			ResultSet results = qexec.execSelect();
 
 			while (results.hasNext()) {
-				System.out.println("-");
+//				System.out.println("-");
 				ResultBinding binding = (ResultBinding) results.next();
 
-				System.out.println(binding);
+//				System.out.println(binding);
 
 				URI person = URI.create((binding.get("?person")).asResource()
 						.getURI());
