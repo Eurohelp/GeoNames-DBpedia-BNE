@@ -56,14 +56,18 @@ public class App {
 			Iterator<Autor> autores_iterator = autores.iterator();
 			while (autores_iterator.hasNext()) {
 				Autor autor = autores_iterator.next();
-				
+
 				ArrayList<Obra> obras = app.getObras(autor);
 				if (!obras.isEmpty()) {
-					System.out.println("==>" + autor.getUri() + " - " + autor.getName());
+					System.out.println("==>" + autor.getUri() + " - "
+							+ autor.getName() + " - " + autor.getDescription()
+							+ " - " + autor.getDepiction() + " - "
+							+ autor.getBorn() + " - " + autor.getDeath());
 					Iterator<Obra> obras_iterator = obras.iterator();
 					while (obras_iterator.hasNext()) {
 						Obra obra = obras_iterator.next();
-						System.out.println("      " + obra.getUri() + " - " + obra.getTitulo());
+						System.out.println("      " + obra.getUri() + " - "
+								+ obra.getTitulo());
 					}
 				}
 			}
