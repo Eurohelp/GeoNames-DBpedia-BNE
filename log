@@ -1,7 +1,4 @@
-log4j:WARN No appenders could be found for logger (org.apache.http.client.protocol.RequestAddCookies).
-log4j:WARN Please initialize the log4j system properly.
-log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
-{"\tAlhama de Almería\t":{"lon":-2.570075,"lat":36.95742}}
+[{"\tAlhama de Almería\t":{"lon":-2.570075,"lat":36.95742}}
 {"\tAlmería\t":{"lon":-2.467922,"lat":36.84016}}
 {"\tAlgeciras\t":{"lon":-5.447698,"lat":36.12978}}
 {"\tChipiona\t":{"lon":-6.43587,"lat":36.7408}}
@@ -25,12 +22,6 @@ log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more in
 {"\tVillanueva del Arzobispo\t":{"lon":-3.010099,"lat":38.16934}}
 {"\tAlpandeire\t":{"lon":-5.202244,"lat":36.63317}}
 {"\tBurgo (El)\t":{"lon":-4.946407,"lat":36.78993}}
-Exception in thread "main" java.lang.Exception: Could not obtain ID from GeoNames due to: {"status":{"message":"the hourly limit of 2000 credits for mikel_egana has been exceeded. Please throttle your requests or use the commercial service.","value":19}}
-	at es.eurohelp.fujitsu.GeoNames_DBPedia_BNE.getAutores(GeoNames_DBPedia_BNE.java:49)
-	at es.eurohelp.fujitsu.linkeddata.autor_lugar.main(autor_lugar.java:57)
-log4j:WARN No appenders could be found for logger (org.apache.http.client.protocol.RequestAddCookies).
-log4j:WARN Please initialize the log4j system properly.
-log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
 {"\tFuengirola\t":{"lon":-4.624353,"lat":36.53901}}
 {"\tMálaga\t":{"lon":-4.420019,"lat":36.71965}}
 {"\tVélez-Málaga\t":{"lon":-4.100675,"lat":36.77864}}
@@ -49,12 +40,87 @@ log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more in
 {"\tCrivillén\t":{"lon":-0.5752621,"lat":40.88327}}
 {"\tSamper de Calanda\t":{"lon":-0.390319,"lat":41.19006}}
 {"\tTeruel\t":{"lon":-1.10691,"lat":40.34411}}
+{"\tAlhama de Aragón\t":{"lon":-1.894019,"lat":41.29637}}
+{"\tCalatayud\t":{"lon":-1.647009,"lat":41.35432}}
+{"\tMaella\t":{"lon":0.1398754,"lat":41.12497}}
+{"\tSos del Rey Católico\t":{"lon":-1.215209,"lat":42.49719}}
+{"\tTorrehermosa\t":{"lon":-2.129165,"lat":41.23868}}
+{"\tZaragoza\t":{"lon":-0.8765379,"lat":41.65629}}
+{"\tCangas de Onís\t":{"lon":-5.126967,"lat":43.3485}}
+{"\tCangas del Narcea\t":{"lon":-6.549129,"lat":43.17706}}
+{"\tGijón\t":{"lon":-5.661926,"lat":43.54526}}
+{"\tOviedo\t":{"lon":-5.844759,"lat":43.36026}}
+{"\tRibadedeva\t":{"lon":-4.57,"lat":43.37}}
+{"\tRibadesella\t":{"lon":-5.059171,"lat":43.46145}}
+{"\tSoto del Barco\t":{"lon":-6.069166,"lat":43.53319}}
+{"\tGranadilla de Abona\t":{"lon":-16.57691,"lat":28.12018}}
+{"\tPuerto de la Cruz\t":{"lon":-16.54516,"lat":28.41339}}
+{"\tSanta Cruz de Tenerife\t":{"lon":-16.25486,"lat":28.46981}}
+{"\tCastro-Urdiales\t":{"lon":-3.21957,"lat":43.38277}}
+{"\tSantoña\t":{"lon":-3.453193,"lat":43.44215}}
+{"\tTorrelavega\t":{"lon":-4.047017,"lat":43.35146}}
+{"\tAlbacete\t":{"lon":-1.86007,"lat":38.99765}}
+{"\tHellín\t":{"lon":-1.70331,"lat":38.51216}}
+{"\tRoda (La)\t":{"lon":-1.868604,"lat":39.0013}}
+{"\tVillarrobledo\t":{"lon":-2.607643,"lat":39.26726}}
+{"\tBrazatortas\t":{"lon":-4.296044,"lat":38.66077}}
+{"\tCampo de Criptana\t":{"lon":-3.12215,"lat":39.40229}}
+{"\tCiudad Real\t":{"lon":-3.927263,"lat":38.9861}}
+{"\tGranátula de Calatrava\t":{"lon":-3.743112,"lat":38.79531}}
+{"\tMiguelturra\t":{"lon":-3.891293,"lat":38.96479}}
+{"\tPozuelo de Calatrava\t":{"lon":-3.837884,"lat":38.91215}}
+{"\tCuenca\t":{"lon":-2.134005,"lat":40.07183}}
+{"\tBrihuega\t":{"lon":-2.870508,"lat":40.75965}}
+{"\tGuadalajara\t":{"lon":-3.166493,"lat":40.62981}}
+{"\tLuzón\t":{"lon":-2.277313,"lat":41.02659}}
+{"\tMarchamalo\t":{"lon":-3.200962,"lat":40.66821}}
+{"\tBorox\t":{"lon":-3.740191,"lat":40.06972}}
+{"\tToledo\t":{"lon":-4.024476,"lat":39.85678}}
+{"\t�?vila\t":{"lon":-4.700323,"lat":40.65642}}
+{"\tCebreros\t":{"lon":-4.464714,"lat":40.45507}}
+{"\tFontiveros\t":{"lon":-4.967885,"lat":40.9306}}
+{"\tGotarrendura\t":{"lon":-4.739214,"lat":40.82674}}
+{"\tMadrigal de las Altas Torres\t":{"lon":-4.998767,"lat":41.08944}}
+{"\tPiedrahíta\t":{"lon":-5.328194,"lat":40.46339}}
+{"\tBurgos\t":{"lon":-3.699731,"lat":42.34087}}
+{"\tCaleruega\t":{"lon":-3.486718,"lat":41.82503}}
+{"\tMambrillas de Lara\t":{"lon":-3.461727,"lat":42.09437}}
+{"\tPoza de la Sal\t":{"lon":-3.501162,"lat":42.66542}}
+{"\tMansilla Mayor\t":{"lon":-5.442078,"lat":42.5089}}
+{"\tPonferrada\t":{"lon":-6.590833,"lat":42.54633}}
+{"\tReyero\t":{"lon":-5.199557,"lat":42.94928}}
+{"\tSan Andrés del Rabanedo\t":{"lon":-5.619493,"lat":42.61139}}
+{"\tAmusco\t":{"lon":-4.47014,"lat":42.17311}}
+{"\tCarrión de los Condes\t":{"lon":-4.601765,"lat":42.33895}}
+{"\tCervera de Pisuerga\t":{"lon":-4.499135,"lat":42.86576}}
+{"\tPalencia\t":{"lon":-4.531175,"lat":42.01246}}
+log4j:WARN No appenders could be found for logger (org.apache.http.client.protocol.RequestAddCookies).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
 Exception in thread "main" java.lang.Exception: Could not obtain ID from GeoNames due to: {"status":{"message":"the hourly limit of 2000 credits for eurohelp.bilbao has been exceeded. Please throttle your requests or use the commercial service.","value":19}}
 	at es.eurohelp.fujitsu.GeoNames_DBPedia_BNE.getAutores(GeoNames_DBPedia_BNE.java:49)
-	at es.eurohelp.fujitsu.linkeddata.autor_lugar.main(autor_lugar.java:57)
+	at es.eurohelp.fujitsu.linkeddata.autor_lugar.main(autor_lugar.java:58)
+log4j:WARN No appenders could be found for logger (org.apache.http.client.protocol.RequestAddCookies).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+Exception in thread "main" java.lang.Exception: Could not obtain ID from GeoNames due to: {"status":{"message":"the hourly limit of 2000 credits for mikel_ni has been exceeded. Please throttle your requests or use the commercial service.","value":19}}
+	at es.eurohelp.fujitsu.GeoNames_DBPedia_BNE.getAutores(GeoNames_DBPedia_BNE.java:49)
+	at es.eurohelp.fujitsu.linkeddata.autor_lugar.main(autor_lugar.java:58)
 log4j:WARN No appenders could be found for logger (org.apache.http.client.protocol.RequestAddCookies).
 log4j:WARN Please initialize the log4j system properly.
 log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
 Exception in thread "main" java.lang.Exception: Could not obtain ID from GeoNames due to: {"status":{"message":"the hourly limit of 2000 credits for mikel_egana has been exceeded. Please throttle your requests or use the commercial service.","value":19}}
 	at es.eurohelp.fujitsu.GeoNames_DBPedia_BNE.getAutores(GeoNames_DBPedia_BNE.java:49)
-	at es.eurohelp.fujitsu.linkeddata.autor_lugar.main(autor_lugar.java:57)
+	at es.eurohelp.fujitsu.linkeddata.autor_lugar.main(autor_lugar.java:58)
+log4j:WARN No appenders could be found for logger (org.apache.http.client.protocol.RequestAddCookies).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+Exception in thread "main" java.lang.Exception: Could not obtain ID from GeoNames due to: {"status":{"message":"the hourly limit of 2000 credits for mikel_egana has been exceeded. Please throttle your requests or use the commercial service.","value":19}}
+	at es.eurohelp.fujitsu.GeoNames_DBPedia_BNE.getAutores(GeoNames_DBPedia_BNE.java:50)
+	at es.eurohelp.fujitsu.linkeddata.autor_lugar.main(autor_lugar.java:58)
+log4j:WARN No appenders could be found for logger (org.apache.http.client.protocol.RequestAddCookies).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+Exception in thread "main" java.lang.Exception: Could not obtain ID from GeoNames due to: {"status":{"message":"the hourly limit of 2000 credits for mikel_egana has been exceeded. Please throttle your requests or use the commercial service.","value":19}}
+	at es.eurohelp.fujitsu.GeoNames_DBPedia_BNE.getAutores(GeoNames_DBPedia_BNE.java:50)
+	at es.eurohelp.fujitsu.linkeddata.autor_lugar.main(autor_lugar.java:59)

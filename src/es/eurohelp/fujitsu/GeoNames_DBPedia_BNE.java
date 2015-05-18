@@ -37,6 +37,7 @@ public class GeoNames_DBPedia_BNE {
 			throws Exception {
 		ArrayList<Autor> autores = new ArrayList<Autor>();
 		String geonamesid = null;
+//		String geonamesid = "3117735";
 		// Get GeoNamesId
 		GeoNames geonames = new GeoNames(geonamesurl, geonamesuser);
 
@@ -65,7 +66,6 @@ public class GeoNames_DBPedia_BNE {
 //		System.out.println(geonamesid);
 		String sparqlQuery = "PREFIX owl:<http://www.w3.org/2002/07/owl#>"
 				+ "PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>"
-				+ "PREFIX dbpedia_prop:<http://dbpedia.org/property/>"
 				+ "PREFIX dbpedia_ont:<http://dbpedia.org/ontology/>"
 				+ "SELECT DISTINCT ?person ?nombre " + "WHERE {"
 				+ "?person rdfs:label ?nombre . "
@@ -73,8 +73,7 @@ public class GeoNames_DBPedia_BNE {
 				+ geonamesid
 				+ "/> ."
 				// + "?town owl:sameAs <http://sws.geonames.org/3117735/>"
-				+ "{?person dbpedia_prop:birthPlace ?town} " + "UNION "
-				+ "{?person dbpedia_ont:birthPlace ?town}"
+				+ "?person dbpedia_ont:birthPlace ?town ."
 				+ "FILTER( lang(?nombre) = \"es\" )" + "}";
 
 		Query query = QueryFactory.create(sparqlQuery);

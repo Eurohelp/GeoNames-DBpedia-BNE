@@ -23,8 +23,10 @@ public class autor_lugar {
 	public static void main(String[] args) throws Exception {
 
 		String GeoNamesURL = "http://api.geonames.org/";
-		 String GeoNamesUser = "mikel_egana";
-//		String GeoNamesUser = "eurohelp.bilbao";
+		String GeoNamesUser = args[0];
+//		String GeoNamesUser = "mikel_egana"; // 12:20
+//		String GeoNamesUser = "eurohelp.bilbao"; // 12:10
+//		String GeoNamesUser = "mikel_ni"; // 12:15
 		String DBPediaEndPoint = "http://dbpedia.org/sparql";
 		String BNEendpoint = "http://datos.bne.es/sparql";
 
@@ -34,7 +36,7 @@ public class autor_lugar {
 		JSONParser parser = new JSONParser();
 		Object obj = parser
 				.parse(new FileReader(
-						"/Users/megana/Euro-help/Eclipse_Workspace/GeoNames-DBpedia-BNE/towns2.txt"));
+						args[1]));
 		JSONArray array = (JSONArray) obj;
 
 		Iterator iterator = array.iterator();
