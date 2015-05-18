@@ -124,3 +124,9 @@ log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more in
 Exception in thread "main" java.lang.Exception: Could not obtain ID from GeoNames due to: {"status":{"message":"the hourly limit of 2000 credits for mikel_egana has been exceeded. Please throttle your requests or use the commercial service.","value":19}}
 	at es.eurohelp.fujitsu.GeoNames_DBPedia_BNE.getAutores(GeoNames_DBPedia_BNE.java:50)
 	at es.eurohelp.fujitsu.linkeddata.autor_lugar.main(autor_lugar.java:59)
+log4j:WARN No appenders could be found for logger (org.apache.http.client.protocol.RequestAddCookies).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+Exception in thread "main" java.lang.Exception: Could not obtain ID from GeoNames due to: {"status":{"message":"the hourly limit of 2000 credits for mikel_egana has been exceeded. Please throttle your requests or use the commercial service.","value":19}}
+	at es.eurohelp.fujitsu.GeoNames_DBPedia_BNE.getAutores(GeoNames_DBPedia_BNE.java:50)
+	at es.eurohelp.fujitsu.linkeddata.autor_lugar.main(autor_lugar.java:59)
