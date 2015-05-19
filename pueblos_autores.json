@@ -1,0 +1,197 @@
+[
+{"\tAlhama de Almería\t":{"lon":-2.570075,"lat":36.95742,"prov":04}}
+{"\tAlmería\t":{"lon":-2.467922,"lat":36.84016,"prov":04}}
+{"\tAlgeciras\t":{"lon":-5.447698,"lat":36.12978,"prov":11}}
+{"\tChipiona\t":{"lon":-6.43587,"lat":36.7408,"prov":11}}
+{"\tJerez de la Frontera\t":{"lon":-6.137173,"lat":36.68656,"prov":11}}
+{"\tSan Fernando\t":{"lon":-6.196626,"lat":36.46572,"prov":11}}
+{"\tSetenil de las Bodegas\t":{"lon":-5.181413,"lat":36.86406,"prov":11}}
+{"\tBujalance\t":{"lon":-4.383588,"lat":37.89657,"prov":14}}
+{"\tCórdoba\t":{"lon":-4.779152,"lat":37.88473,"prov":14}}
+{"\tIznájar\t":{"lon":-4.308423,"lat":37.25726,"prov":14}}
+{"\tMontilla\t":{"lon":-4.638313,"lat":37.58963,"prov":14}}
+{"\tPozoblanco\t":{"lon":-4.848376,"lat":38.37742,"prov":14}}
+{"\tPriego de Córdoba\t":{"lon":-4.194839,"lat":37.4389,"prov":14}}
+{"\tVictoria (La)\t":{"lon":-4.784959,"lat":37.88327,"prov":14}}
+{"\tFuente Vaqueros\t":{"lon":-3.783053,"lat":37.21957,"prov":18}}
+{"\tGuadix\t":{"lon":-3.134583,"lat":37.3004,"prov":18}}
+{"\tMinas de Riotinto\t":{"lon":-6.591848,"lat":37.69391,"prov":21}}
+{"\tMoguer\t":{"lon":-6.836591,"lat":37.27469,"prov":21}}
+{"\tAlcalá la Real\t":{"lon":-3.925078,"lat":37.46358,"prov":23}}
+{"\tCazorla\t":{"lon":-3.002167,"lat":37.91055,"prov":23}}
+{"\tMancha Real\t":{"lon":-3.612393,"lat":37.78617,"prov":23}}
+{"\tVillanueva del Arzobispo\t":{"lon":-3.010099,"lat":38.16934,"prov":23}}
+{"\tAlpandeire\t":{"lon":-5.202244,"lat":36.63317,"prov":29}}
+{"\tBurgo (El)\t":{"lon":-4.946407,"lat":36.78993,"prov":29}}
+{"\tFuengirola\t":{"lon":-4.624353,"lat":36.53901,"prov":29}}
+{"\tMálaga\t":{"lon":-4.420019,"lat":36.71965,"prov":29}}
+{"\tVélez-Málaga\t":{"lon":-4.100675,"lat":36.77864,"prov":29}}
+{"\tCoria del Río\t":{"lon":-6.051814,"lat":37.28506,"prov":41}}
+{"\tGuadalcanal\t":{"lon":-5.821165,"lat":38.09198,"prov":41}}
+{"\tOsuna\t":{"lon":-5.102748,"lat":37.23697,"prov":41}}
+{"\tSan Juan de Aznalfarache\t":{"lon":-6.035451,"lat":37.35838,"prov":41}}
+{"\tSevilla\t":{"lon":-5.996295,"lat":37.38264,"prov":41}}
+{"\tBarbastro\t":{"lon":0.1239805,"lat":42.0348,"prov":22}}
+{"\tHuesca\t":{"lon":-0.408898,"lat":42.1401,"prov":22}}
+{"\tPeralta de Calasanz\t":{"lon":0.3936722,"lat":42.01811,"prov":22}}
+{"\tSariñena\t":{"lon":-0.1572419,"lat":41.79218,"prov":22}}
+{"\tAbejuela\t":{"lon":-0.8941151,"lat":39.91035,"prov":44}}
+{"\tCamarena de la Sierra\t":{"lon":-1.040907,"lat":40.1476,"prov":44}}
+{"\tCeladas\t":{"lon":-1.1496,"lat":40.4751,"prov":44}}
+{"\tCrivillén\t":{"lon":-0.5752621,"lat":40.88327,"prov":44}}
+{"\tSamper de Calanda\t":{"lon":-0.390319,"lat":41.19006,"prov":44}}
+{"\tTeruel\t":{"lon":-1.10691,"lat":40.34411,"prov":44}}
+{"\tAlhama de Aragón\t":{"lon":-1.894019,"lat":41.29637,"prov":50}}
+{"\tCalatayud\t":{"lon":-1.647009,"lat":41.35432,"prov":50}}
+{"\tMaella\t":{"lon":0.1398754,"lat":41.12497,"prov":50}}
+{"\tSos del Rey Católico\t":{"lon":-1.215209,"lat":42.49719,"prov":50}}
+{"\tTorrehermosa\t":{"lon":-2.129165,"lat":41.23868,"prov":50}}
+{"\tZaragoza\t":{"lon":-0.8765379,"lat":41.65629,"prov":50}}
+{"\tCangas de Onís\t":{"lon":-5.126967,"lat":43.3485,"prov":33}}
+{"\tCangas del Narcea\t":{"lon":-6.549129,"lat":43.17706,"prov":33}}
+{"\tGijón\t":{"lon":-5.661926,"lat":43.54526,"prov":33}}
+{"\tOviedo\t":{"lon":-5.844759,"lat":43.36026,"prov":33}}
+{"\tRibadedeva\t":{"lon":-4.57,"lat":43.37,"prov":33}}
+{"\tRibadesella\t":{"lon":-5.059171,"lat":43.46145,"prov":33}}
+{"\tSoto del Barco\t":{"lon":-6.069166,"lat":43.53319,"prov":33}}
+{"\tGranadilla de Abona\t":{"lon":-16.57691,"lat":28.12018,"prov":38}}
+{"\tPuerto de la Cruz\t":{"lon":-16.54516,"lat":28.41339,"prov":38}}
+{"\tSanta Cruz de Tenerife\t":{"lon":-16.25486,"lat":28.46981,"prov":38}}
+{"\tCastro-Urdiales\t":{"lon":-3.21957,"lat":43.38277,"prov":39}}
+{"\tSantoña\t":{"lon":-3.453193,"lat":43.44215,"prov":39}}
+{"\tTorrelavega\t":{"lon":-4.047017,"lat":43.35146,"prov":39}}
+{"\tAlbacete\t":{"lon":-1.86007,"lat":38.99765,"prov":02}}
+{"\tHellín\t":{"lon":-1.70331,"lat":38.51216,"prov":02}}
+{"\tRoda (La)\t":{"lon":-1.868604,"lat":39.0013,"prov":02}}
+{"\tVillarrobledo\t":{"lon":-2.607643,"lat":39.26726,"prov":02}}
+{"\tBrazatortas\t":{"lon":-4.296044,"lat":38.66077,"prov":13}}
+{"\tCampo de Criptana\t":{"lon":-3.12215,"lat":39.40229,"prov":13}}
+{"\tCiudad Real\t":{"lon":-3.927263,"lat":38.9861,"prov":13}}
+{"\tGranátula de Calatrava\t":{"lon":-3.743112,"lat":38.79531,"prov":13}}
+{"\tMiguelturra\t":{"lon":-3.891293,"lat":38.96479,"prov":13}}
+{"\tPozuelo de Calatrava\t":{"lon":-3.837884,"lat":38.91215,"prov":13}}
+{"\tCuenca\t":{"lon":-2.134005,"lat":40.07183,"prov":16}}
+{"\tBrihuega\t":{"lon":-2.870508,"lat":40.75965,"prov":19}}
+{"\tGuadalajara\t":{"lon":-3.166493,"lat":40.62981,"prov":19}}
+{"\tLuzón\t":{"lon":-2.277313,"lat":41.02659,"prov":19}}
+{"\tMarchamalo\t":{"lon":-3.200962,"lat":40.66821,"prov":19}}
+{"\tBorox\t":{"lon":-3.740191,"lat":40.06972,"prov":45}}
+{"\tToledo\t":{"lon":-4.024476,"lat":39.85678,"prov":45}}
+{"\t�?vila\t":{"lon":-4.700323,"lat":40.65642,"prov":05}}
+{"\tCebreros\t":{"lon":-4.464714,"lat":40.45507,"prov":05}}
+{"\tFontiveros\t":{"lon":-4.967885,"lat":40.9306,"prov":05}}
+{"\tGotarrendura\t":{"lon":-4.739214,"lat":40.82674,"prov":05}}
+{"\tMadrigal de las Altas Torres\t":{"lon":-4.998767,"lat":41.08944,"prov":05}}
+{"\tPiedrahíta\t":{"lon":-5.328194,"lat":40.46339,"prov":05}}
+{"\tBurgos\t":{"lon":-3.699731,"lat":42.34087,"prov":09}}
+{"\tCaleruega\t":{"lon":-3.486718,"lat":41.82503,"prov":09}}
+{"\tMambrillas de Lara\t":{"lon":-3.461727,"lat":42.09437,"prov":09}}
+{"\tPoza de la Sal\t":{"lon":-3.501162,"lat":42.66542,"prov":09}}
+{"\tMansilla Mayor\t":{"lon":-5.442078,"lat":42.5089,"prov":24}}
+{"\tPonferrada\t":{"lon":-6.590833,"lat":42.54633,"prov":24}}
+{"\tReyero\t":{"lon":-5.199557,"lat":42.94928,"prov":24}}
+{"\tSan Andrés del Rabanedo\t":{"lon":-5.619493,"lat":42.61139,"prov":24}}
+{"\tAmusco\t":{"lon":-4.47014,"lat":42.17311,"prov":34}}
+{"\tCarrión de los Condes\t":{"lon":-4.601765,"lat":42.33895,"prov":34}}
+{"\tCervera de Pisuerga\t":{"lon":-4.499135,"lat":42.86576,"prov":34}}
+{"\tPalencia\t":{"lon":-4.531175,"lat":42.01246,"prov":34}}
+{"\t�?greda\t":{"lon":-1.920437,"lat":41.85508,"prov":42}}
+{"\tSan Leonardo de Yagüe\t":{"lon":-3.066409,"lat":41.82905,"prov":42}}
+{"\tValladolid\t":{"lon":-4.728388,"lat":41.65295,"prov":47}}
+{"\tZamora\t":{"lon":-5.743778,"lat":41.50368,"prov":49}}
+{"\tAlella\t":{"lon":2.295461,"lat":41.49395,"prov":08}}
+{"\tArtés\t":{"lon":1.954726,"lat":41.79839,"prov":08}}
+{"\tBarcelona\t":{"lon":2.169919,"lat":41.38792,"prov":08}}
+{"\tCabanyes (Les)\t":{"lon":1.68963,"lat":41.37174,"prov":08}}
+{"\tCalldetenes\t":{"lon":2.283792,"lat":41.92522,"prov":08}}
+{"\tCentelles\t":{"lon":2.221327,"lat":41.79659,"prov":08}}
+{"\tCornellà de Llobregat\t":{"lon":2.070432,"lat":41.35561,"prov":08}}
+{"\tEsplugues de Llobregat\t":{"lon":2.088085,"lat":41.37751,"prov":08}}
+{"\tFolgueroles\t":{"lon":2.31796,"lat":41.93813,"prov":08}}
+{"\tGranada (La)\t":{"lon":1.719494,"lat":41.37685,"prov":08}}
+{"\tHospitalet de Llobregat (L')\t":{"lon":2.099704,"lat":41.35958,"prov":08}}
+{"\tLlacuna (La)\t":{"lon":2.197244,"lat":41.39901,"prov":08}}
+{"\tMataró\t":{"lon":2.445278,"lat":41.5375,"prov":08}}
+{"\tPacs del Penedès\t":{"lon":1.669417,"lat":41.36156,"prov":08}}
+{"\tPalma de Cervelló (La)\t":{"lon":1.967154,"lat":41.41331,"prov":08}}
+{"\tSant Adrià de Besòs\t":{"lon":2.218239,"lat":41.4306,"prov":08}}
+{"\tSant Joan Despí\t":{"lon":2.056065,"lat":41.36769,"prov":08}}
+{"\tSant Just Desvern\t":{"lon":2.075544,"lat":41.38576,"prov":08}}
+{"\tSant Pere de Ribes\t":{"lon":1.775418,"lat":41.2591,"prov":08}}
+{"\tTavèrnoles\t":{"lon":2.326051,"lat":41.95227,"prov":08}}
+{"\tVilanova i la Geltrú\t":{"lon":1.725568,"lat":41.22415,"prov":08}}
+{"\tLlanars\t":{"lon":2.34457,"lat":42.32041,"prov":17}}
+{"\tMolló\t":{"lon":2.404507,"lat":42.34643,"prov":17}}
+{"\tPortbou\t":{"lon":3.15937,"lat":42.42653,"prov":17}}
+{"\tVilallonga de Ter\t":{"lon":2.310959,"lat":42.33075,"prov":17}}
+{"\tAlbatàrrec\t":{"lon":0.6057172,"lat":41.57299,"prov":25}}
+{"\tAlcoletge\t":{"lon":0.6945253,"lat":41.64909,"prov":25}}
+{"\tAlguaire\t":{"lon":0.5897447,"lat":41.73795,"prov":25}}
+{"\tAlmacelles\t":{"lon":0.4377279,"lat":41.73101,"prov":25}}
+{"\tAlpicat\t":{"lon":0.5552974,"lat":41.66711,"prov":25}}
+{"\tArtesa de Lleida\t":{"lon":0.7055162,"lat":41.55321,"prov":25}}
+{"\tBenavent de Segrià\t":{"lon":0.633923,"lat":41.69626,"prov":25}}
+{"\tConca de Dalt\t":{"lon":0.9730556,"lat":42.24611,"prov":25}}
+{"\tCorbins\t":{"lon":0.6974681,"lat":41.69099,"prov":25}}
+{"\tGavet de la Conca\t":{"lon":0.9211597,"lat":42.12273,"prov":25}}
+{"\tMontoliu de Lleida\t":{"lon":0.5875061,"lat":41.56234,"prov":25}}
+{"\tPobla de Segur (La)\t":{"lon":0.9675135,"lat":42.24765,"prov":25}}
+{"\tSalàs de Pallars\t":{"lon":0.9324489,"lat":42.21158,"prov":25}}
+{"\tSoses\t":{"lon":0.4879092,"lat":41.53379,"prov":25}}
+{"\tSudanell\t":{"lon":0.566377,"lat":41.55616,"prov":25}}
+{"\tTalarn\t":{"lon":0.8992487,"lat":42.18497,"prov":25}}
+{"\tTorre-serona\t":{"lon":0.6292645,"lat":41.6713,"prov":25}}
+{"\tTorrefarrera\t":{"lon":0.6067967,"lat":41.67339,"prov":25}}
+{"\tTorrelameu\t":{"lon":0.7047597,"lat":41.70456,"prov":25}}
+{"\tTorres de Segre\t":{"lon":0.5141932,"lat":41.53406,"prov":25}}
+{"\tVilanova de la Barca\t":{"lon":0.7291372,"lat":41.68935,"prov":25}}
+{"\tVilanova de Segrià\t":{"lon":0.620144,"lat":41.71128,"prov":25}}
+{"\tCastellvell del Camp\t":{"lon":1.098705,"lat":41.17999,"prov":43}}
+{"\tMilà (El)\t":{"lon":1.20525,"lat":41.24904,"prov":43}}
+{"\tTortosa\t":{"lon":0.5209974,"lat":40.811,"prov":43}}
+{"\tVila-seca\t":{"lon":1.145001,"lat":41.11095,"prov":43}}
+{"\tVinyols i els Arcs\t":{"lon":1.039709,"lat":41.11338,"prov":43}}
+{"\tAlmendralejo\t":{"lon":-6.405679,"lat":38.68982,"prov":06}}
+{"\tBadajoz\t":{"lon":-6.970284,"lat":38.8786,"prov":06}}
+{"\tBarcarrota\t":{"lon":-6.849041,"lat":38.51441,"prov":06}}
+{"\tMérida\t":{"lon":-6.345606,"lat":38.91586,"prov":06}}
+{"\tValle de la Serena\t":{"lon":-5.799649,"lat":38.70062,"prov":06}}
+{"\tAlcántara\t":{"lon":-6.886507,"lat":39.71918,"prov":10}}
+{"\tCapela (A)\t":{"lon":-8.792709,"lat":42.69293,"prov":15}}
+{"\tCoruña (A)\t":{"lon":-8.395835,"lat":43.37087,"prov":15}}
+{"\tOroso\t":{"lon":-8.434846,"lat":42.99442,"prov":15}}
+{"\tPonteceso\t":{"lon":-8.900965,"lat":43.24269,"prov":15}}
+{"\tCospeito\t":{"lon":-7.558825,"lat":43.23597,"prov":27}}
+{"\tMonforte de Lemos\t":{"lon":-7.510688,"lat":42.5185,"prov":27}}
+{"\tBarbadás\t":{"lon":-7.887585,"lat":42.29916,"prov":32}}
+{"\tOurense\t":{"lon":-7.864641,"lat":42.34001,"prov":32}}
+{"\tMos\t":{"lon":-8.654388,"lat":42.19545,"prov":36}}
+{"\tPorriño (O)\t":{"lon":-8.619299,"lat":42.16036,"prov":36}}
+{"\tValga\t":{"lon":-8.639425,"lat":42.69431,"prov":36}}
+{"\tPetra\t":{"lon":3.112162,"lat":39.6091,"prov":07}}
+{"\tLogroño\t":{"lon":-2.449995,"lat":42.46577,"prov":26}}
+{"\tTorrecilla en Cameros\t":{"lon":-2.630543,"lat":42.25526,"prov":26}}
+{"\tAlcalá de Henares\t":{"lon":-3.364136,"lat":40.48166,"prov":28}}
+{"\tMadrid\t":{"lon":-3.700346,"lat":40.41669,"prov":28}}
+{"\tRascafría\t":{"lon":-3.879398,"lat":40.90381,"prov":28}}
+{"\tCartagena\t":{"lon":-0.9912944,"lat":37.60565,"prov":30}}
+{"\tMurcia\t":{"lon":-1.12989,"lat":37.98344,"prov":30}}
+{"\tGetaria\t":{"lon":-2.204363,"lat":43.30326,"prov":20}}
+{"\tBilbao\t":{"lon":-2.923441,"lat":43.25696,"prov":48}}
+{"\tJijona\/Xixona\t":{"lon":-0.5077739,"lat":38.54006,"prov":03}}
+{"\tMutxamel\t":{"lon":-0.4432408,"lat":38.41235,"prov":03}}
+{"\tOnil\t":{"lon":-0.6731591,"lat":38.62606,"prov":03}}
+{"\tOrihuela\t":{"lon":-0.9447829,"lat":38.08395,"prov":03}}
+{"\tSan Vicente del Raspeig\/Sant Vicent del Raspeig\t":{"lon":-0.5249284,"lat":38.39609,"prov":03}}
+{"\tSant Joan d'Alacant\t":{"lon":-0.4345329,"lat":38.39817,"prov":03}}
+{"\tVerger (el)\t":{"lon":-0.5109846,"lat":38.33109,"prov":03}}
+{"\tCastellnovo\t":{"lon":-0.4583924,"lat":39.86256,"prov":12}}
+{"\tÈnova (l')\t":{"lon":-0.4802662,"lat":39.04391,"prov":46}}
+{"\tLlocnou d'En Fenollet\t":{"lon":-0.467483,"lat":39.01358,"prov":46}}
+{"\tLlosa de Ranes (la)\t":{"lon":-0.5336824,"lat":39.01865,"prov":46}}
+{"\tNovelé\/Novetlè\t":{"lon":-0.5479128,"lat":38.9798,"prov":46}}
+{"\tRotglà i Corberà\t":{"lon":-0.565334,"lat":39.00407,"prov":46}}
+{"\tSedaví\t":{"lon":-0.3857862,"lat":39.42505,"prov":46}}
+{"\tValencia\t":{"lon":-0.3768049,"lat":39.47024,"prov":46}}
+]
+

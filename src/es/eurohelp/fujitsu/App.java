@@ -25,8 +25,8 @@ public class App {
 		// String longitude = "-2.17663";
 
 		// Salamanca-Madrid
-		// String latitude = "40.429824";
-		// String longitude = "-3.683133";
+		 String latitude = "40.429824";
+		 String longitude = "-3.683133";
 
 		// Antas
 		// String latitude = "37.24516";
@@ -41,8 +41,8 @@ public class App {
 		// String longitude = "-2.166666";
 
 		// Bilbo
-		String latitude = "43.256943";
-		String longitude = "-2.923611";
+//		String latitude = "43.256943";
+//		String longitude = "-2.923611";
 
 		// String latitude = "37777777777777777777777777777";
 		// String longitude = "-222222222222222222222222222";

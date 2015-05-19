@@ -36,7 +36,8 @@ public class GeoNames_DBPedia_BNE {
 	public ArrayList<Autor> getAutores(String latitude, String longitude)
 			throws Exception {
 		ArrayList<Autor> autores = new ArrayList<Autor>();
-
+		ArrayList<URI> added_autor_uris = new ArrayList<URI>();
+		
 		String geonamesid = null;
 		// String geonamesid = "3117735";
 
@@ -91,10 +92,7 @@ public class GeoNames_DBPedia_BNE {
 			ResultSet results = qexec.execSelect();
 
 			while (results.hasNext()) {
-//				System.out.println("-");
 				ResultBinding binding = (ResultBinding) results.next();
-
-//				System.out.println(binding);
 
 				URI person = URI.create((binding.get("?person")).asResource()
 						.getURI());
@@ -108,9 +106,12 @@ public class GeoNames_DBPedia_BNE {
 				String death = ((binding.get("?death")).asLiteral().getString());
 				String born = ((binding.get("?born")).asLiteral().getString());
 
-				Autor autor = new Autor(person, nombre, description, depiction,
+				if(!added_autor_uris.contains(person)){
+					Autor autor = new Autor(person, nombre, description, depiction,
 						death, born);
-				autores.add(autor);
+					autores.add(autor);
+					added_autor_uris.add(person);
+				}
 			}
 		} catch (Exception e) {
 			if (e.getMessage().startsWith("HTTP 502")) {
@@ -126,9 +127,6 @@ public class GeoNames_DBPedia_BNE {
 	}
 
 	public ArrayList<Obra> getObras(Autor autor) {
-
-		// System.out.println(autor.getName());
-
 		ArrayList<Obra> obras = new ArrayList<Obra>();
 
 		String sparqlQuery = "PREFIX owl:<http://www.w3.org/2002/07/owl#>"
@@ -150,9 +148,6 @@ public class GeoNames_DBPedia_BNE {
 			URI uri_obra = URI.create((binding.get("?obra")).asResource()
 					.getURI());
 			Obra obra = new Obra(uri_obra, titulo);
-
-			// System.out.println(uri_obra + titulo);
-
 			obras.add(obra);
 		}
 		qexec.close();
