@@ -9,10 +9,12 @@ public class Autor extends LinkedDataResource {
 	private String depiction;
 	private String death;
 	private String born;
+	private int id;
 	
-	public Autor(URI uri, String name, String description, String depiction,
+	public Autor(int id, URI uri, String name, String description, String depiction,
 			String death, String born) {
 		super(uri);
+		this.id = id;
 		this.name = name;
 		this.description = description;
 		this.depiction = depiction;
@@ -20,6 +22,18 @@ public class Autor extends LinkedDataResource {
 		this.born = born;
 	}
 	
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
 	public String getName() {
 		return name;
 	}

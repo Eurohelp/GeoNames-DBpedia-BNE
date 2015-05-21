@@ -21,28 +21,28 @@ public class App {
 		String BNEendpoint = "http://datos.bne.es/sparql";
 
 		// Astigarraga?
-		// String latitude = "43.00612";
-		// String longitude = "-2.17663";
+//		 String latitude = "43.00612";
+//		 String longitude = "-2.17663";
 
 		// Salamanca-Madrid
-		 String latitude = "40.429824";
-		 String longitude = "-3.683133";
+//		 String latitude = "40.429824";
+//		 String longitude = "-3.683133";
 
 		// Antas
 		// String latitude = "37.24516";
 		// String longitude = "-1.917543";
 
-		// Ataun
-		// String latitude = "43";
-		// String longitude = "-2.166667";
+		// Ataun pueblos
+//		 String latitude = "43";
+//		 String longitude = "-2.166667";
 
 		// Ataun
-		// String latitude = "43.000000";
-		// String longitude = "-2.166666";
+//		 String latitude = "43.000000";
+//		 String longitude = "-2.166666";
 
 		// Bilbo
-//		String latitude = "43.256943";
-//		String longitude = "-2.923611";
+		String latitude = "43.256943";
+		String longitude = "-2.923611";
 
 		// String latitude = "37777777777777777777777777777";
 		// String longitude = "-222222222222222222222222222";
@@ -59,7 +59,7 @@ public class App {
 
 				ArrayList<Obra> obras = app.getObras(autor);
 				if (!obras.isEmpty()) {
-					System.out.println("==>" + autor.getUri() + " - "
+					System.out.println("==>" + autor.getId() + " - "+ autor.getUri() + " - "
 							+ autor.getName() + " - " + autor.getDescription()
 							+ " - " + autor.getDepiction() + " - "
 							+ autor.getBorn() + " - " + autor.getDeath());

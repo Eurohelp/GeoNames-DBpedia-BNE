@@ -39,6 +39,7 @@ public class GeoNames {
 		String entity = http_get(GeoNamesURL + "hierarchyJSON?geonameId="
 				+ geonameID + "&username=" + UserName);
 
+//		System.out.println(entity);
 		Object json_response = JSONValue.parse(entity);
 		JSONArray geonames_array = (JSONArray) ((Map) json_response)
 				.get("geonames");
@@ -46,12 +47,12 @@ public class GeoNames {
 		while (geonames_array_iterator.hasNext()) {
 			Map parent = (Map) geonames_array_iterator.next();
 			String fcode = (String) parent.get("fcode");
-//			System.out.println(geonameID +"--"+fcode);
+//			System.out.println(geonameID +"-----"+fcode);
 			if (!(fcode.equals("PPLX") || fcode.equals("PPL"))) {
 				geonameID = String.valueOf(parent.get("geonameId"));
 			}
 		}
-
+//		System.out.println("->" + geonameID);
 		return geonameID;
 	}
 

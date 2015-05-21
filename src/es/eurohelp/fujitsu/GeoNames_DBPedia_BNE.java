@@ -37,6 +37,7 @@ public class GeoNames_DBPedia_BNE {
 			throws Exception {
 		ArrayList<Autor> autores = new ArrayList<Autor>();
 		ArrayList<URI> added_autor_uris = new ArrayList<URI>();
+		int id = 0;
 		
 		String geonamesid = null;
 		// String geonamesid = "3117735";
@@ -56,17 +57,17 @@ public class GeoNames_DBPedia_BNE {
 			Long GeoNamesId = (Long) ((Map) geonames_array.get(0))
 					.get("geonameId");
 			geonamesid = String.valueOf(GeoNamesId);
-			// System.out.println(geonamesid);
+//			 System.out.println(geonamesid);
 			// Get fcode: if FCODE is section of populated place (PPLX), obtain
 			// parent
 			String fcode = (String) ((Map) geonames_array.get(0)).get("fcode");
-			// System.out.println(geonamesid +"--"+fcode);
+//			System.out.println(geonamesid +"--"+fcode);
 			if (fcode.equals("PPLX") || fcode.equals("PPL")) {
 				geonamesid = geonames.obtainProperPopulatedPlace(geonamesid);
 			}
 		}
 
-		// System.out.println(geonamesid);
+//		System.out.println(geonamesid);
 		String sparqlQuery = "PREFIX owl:<http://www.w3.org/2002/07/owl#> "
 				+ "PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#> "
 				+ "PREFIX dbpedia_ont:<http://dbpedia.org/ontology/> "
@@ -107,10 +108,11 @@ public class GeoNames_DBPedia_BNE {
 				String born = ((binding.get("?born")).asLiteral().getString());
 
 				if(!added_autor_uris.contains(person)){
-					Autor autor = new Autor(person, nombre, description, depiction,
+					Autor autor = new Autor(id, person, nombre, description, depiction,
 						death, born);
 					autores.add(autor);
 					added_autor_uris.add(person);
+					id=id+1;
 				}
 			}
 		} catch (Exception e) {
