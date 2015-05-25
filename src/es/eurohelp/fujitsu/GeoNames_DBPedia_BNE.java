@@ -107,11 +107,14 @@ public class GeoNames_DBPedia_BNE {
 				String death = ((binding.get("?death")).asLiteral().getString());
 				String born = ((binding.get("?born")).asLiteral().getString());
 
+//				System.out.println("!!" + person);
 				if(!added_autor_uris.contains(person)){
+//					System.out.println("!!!!" + person);
 					Autor autor = new Autor(id, person, nombre, description, depiction,
 						death, born);
 					autores.add(autor);
 					added_autor_uris.add(person);
+//					System.out.println("!!" + person);
 					id=id+1;
 				}
 			}

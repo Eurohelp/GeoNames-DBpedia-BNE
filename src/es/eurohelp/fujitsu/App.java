@@ -23,6 +23,18 @@ public class App {
 		// Astigarraga?
 //		 String latitude = "43.00612";
 //		 String longitude = "-2.17663";
+				 
+		 // Salamanca 
+		 String latitude = "42.81687";
+		 String longitude = "-1.64323";
+		 
+		// XX
+//		 String latitude = "42.81687";
+//		 String longitude = "-1.64323";
+		 
+		 
+		 
+		 
 
 		// Salamanca-Madrid
 //		 String latitude = "40.429824";
@@ -41,8 +53,12 @@ public class App {
 //		 String longitude = "-2.166666";
 
 		// Bilbo
-		String latitude = "43.256943";
-		String longitude = "-2.923611";
+//		String latitude = "43.256943";
+//		String longitude = "-2.923611";
+		
+		// Ribadesella
+//		String latitude = "43.46145";
+//		String longitude = "-5.059171";
 
 		// String latitude = "37777777777777777777777777777";
 		// String longitude = "-222222222222222222222222222";
